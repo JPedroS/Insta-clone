@@ -1,0 +1,17 @@
+img {
+    position: absolute;
+}
+.banner-background {
+    background-image: url("/assets/banner-acesso/fundo.png");
+    height: 602px;
+    width: 379px;
+    margin-top: 15vh;
+    padding-top: 91px;
+    padding-left: 116px;
+}
+/*.cores{
+    width:240px;
+    height:428px;
+}*/
+
+    

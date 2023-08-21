@@ -1,0 +1,21 @@
+.card-title {
+    background-image: url("/assets/logo-instagram.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 100%;
+}
+.card{
+    margin-top: 24vh;
+}
+.card1{
+    text-align: center;
+    border: 1px solid;
+    border-color: lightgray;
+    border-radius: 5px;
+    padding-top: 15px;
+    background-color: #fff;
+}
+.ponteiro {
+    cursor: pointer;
+}

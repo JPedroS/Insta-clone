@@ -1,0 +1,27 @@
+<div class="conteiner">
+    <div class="row">
+        <!-- Parte do banner -->
+
+        <div class="col-sm-6 d-flex justify-content-end" [@animacao-banner]="estadoBanner">
+            <app-banner />
+        </div>
+        <!-- FIM -->
+
+        <!-- Parte do cadastro -->
+
+        <div class="col-sm-6 d-flex justify-content-start">
+            <div *ngIf="cadastro; else formLogin" [@animacao-form]="estadoForm">
+                <app-cadastro (exibirPainel)="exibirPainel($event)" />
+            </div>
+        </div>
+            <!-- FIM -->
+
+            <!-- Parte do login -->
+            <ng-template #formLogin>
+                <div class="col-sm-6 d-flex justify-content-start" [@animacao-form]="estadoForm">
+                    <app-login (exibirPainel)="exibirPainel($event)" />
+                </div>
+            </ng-template>
+            <!-- FIM -->
+    </div>
+</div>
